@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="themes/prabh.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<title>Mobile App </title>
+</head>
+
+<body>
+
+
+	<!--home page-->
+
+	<div id="Home" data-role="page">
+		<div data-role="header">
+			<h1>Abstract Painting</h1>
+		</div>
+		<div data-role="content">
+			<p>Welcome to Abstract painting tutorial. Here you can learn a lot about abstract painting and how it can be made by step be step. I hope you will enjoy the whole journey of learning the process.</p>
+			<img src="images/1.jpg" />
+			<h2>Select the Level</h2>
+			<a data-role="button" href="#easy" data-transition="slide">Easy</a>
+			<a data-role="button" href="#Itermediate">Intermediate</a>
+			<a data-role="button" href="#Hard">Hard</a>
+		</div>
+		<div data-role="footer">
+			<a id="select" data-role="button" href="#Home">Home</a>
+			<a id="select" data-role="button" href="#about me" data-transition="flip">About Me</a>
+		</div>
+	</div>
+
+
+	<!--about me-->
+
+	<div id="about me" data-role="page">
+		<div data-role="header">
+			<h3>About Me</h3>
+		</div>
+		<div data-role="content">
+			<p> My name is Prabhjot Kaur. I am a student of Mobile Application Design and Development.</p>
+			<img id="Prabh" src="images/Prabh.jpg" />
+		</div>
+		<div data-role="footer">
+			<a id="select" data-role="button" href="#Home" data-transition="flip">Home</a>
+			<a id="select" data-role="button" href="#about me">About Me</a>
+		</div>
+	</div>
+
+
+	<!--Start-->
+
+	<div id="easy" data-role="page">
+
+		<div data-role="header">
+			<a href="#Home" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext" data-transition="pop">Home Icon</a>
+			<h1>Level 1</h1>
+		</div>
+
+		<div data-role="content">
+			<p>How many times have you looked at an abstract painting and heard someone say, "I could do that!"? While abstract painting looks easy to some, it can actually be more challenging than traditional or classical painting. It's up to you as the artist to break rules, be expressive, and decide what is art. First, prepare to paint and hit the start button</p>
+			<a data-role="button" href="#step1" id="start" data-transition="slideup">Start Tutorial</a>
+		</div>
+
+	</div>
+
+
+
+	<!--step1-->
+
+	<div id="step1" class="stepClass" data-role="page" data-dialog="true">
+
+		<div data-role="header">
+			<a href="#Home" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext" data-transition="pop">Home Icon</a>
+			<h1>Step 1 of 7</h1>
+		</div>
+
+		<div data-role="content">
+			<h4> Understand primary, secondary, and tertiary colors</h4>
+			<p>At their most basic, a color wheel is divided into three parts: </p>
+			<a href="#Pcolors" class="ui-btn ui-icon-plus ui-btn-icon-left">Primary colors</a>
+			<a href="#Scolors" class="ui-btn ui-icon-plus ui-btn-icon-left">Secondary colors</a>
+			<a href="#Tcolors" class="ui-btn ui-icon-plus ui-btn-icon-left">Tertiary colors</a>
+
+			<p>To become familiar with color creation, try making your own color wheel.</p>
+			<a id="select" data-role="button" href="#step2" data-transition="slideup">Next</a>
+		</div>
+
+
+	</div>
+
+
+
+
+	<div id="Pcolors" data-role="page" data-dialog="true">
+
+		<div data-role="header">
+			<h1>Primary colors</h1>
+			<a href="#step1" class="ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext" data-transition="slidedown">Minus Icon</a>
+		</div>
+
+		<div data-role="content">
+			<p>The are three primary colors:
+			</p>
+			<p>REd</p>
+			<p>Blue</p>
+			<p>Yellow</p>
+			<img src="images/2.0.jpg" />
+		</div>
+
+	</div>
+
+
+	<div id="Scolors" data-role="page" data-dialog="true">
+
+		<div data-role="header">
+			<h1>Secondary colors</h1>
+			<a href="#step1" class="ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext" data-transition="slidedown">Minus Icon</a>
+		</div>
+
+		<div data-role="content">
+			<p>Secondary colors are created by mixing the primary colors together.There are three Secondary colors:
+			</p>
+			<p>Green</p>
+			<p>Orange</p>
+			<p>Purple</p>
+			<img src="images/2.1.jpg" />
+		</div>
+
+	</div>
+
+
+	<div id="Tcolors" data-role="page" data-dialog="true">
+
+		<div data-role="header">
+			<h1>Tertiary colors</h1>
+			<a href="#step1" class="ui-btn ui-corner-all ui-icon-minus ui-btn-icon-notext" data-transition="slidedown">Minus Icon</a>
+		</div>
+
+		<div data-role="content">
+			<p>Tertiary colors can me made by mixing the secondary and tertiary colors are:
+			</p>
+			<p>yellow-orange</p>
+			<p>red-orange</p>
+			<p>red-purple</p>
+			<p>blue-purple</p>
+			<p>blue-green</p>
+			<p>yellow-green</p>
+			<img src="images/2.2.jpg" />
+		</div>
+
+	</div>
+
+
+
+	<!--step2-->
+
+	<div id="step2" class="stepClass" data-role="page" data-dialog="true">
+
+		<div data-role="header">
+			<a href="#Home" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext" data-transition="pop">Home Icon</a>
+			<h1>Step 2 of 7</h1>
+		</div>
+
+		<div data-role="content">
+			<h4>Gather canvas, brushes and paints</h4>
+			<p>You can buy a ready made canvas of any size in a craft store</p>
+			<img src="images/3.jpg" />
+			<p>Pick whatever brushes you like to use with the paint you've already chosen. You might also consider using a palette knife to apply paint, giving it a textured look. While some artists like to use an easel, many abstract artists choose to place their canvases directly on the floor in order to be closer to the work.</p>
+			<img src="images/4.jpg" />
+			<p>Decide whether to use acrylics or oil paint. Acrylics have no odor and are easy to work with since they dry fast and can be painted over if you make a mistake. Oils, on the other hand, aren't usually used because they take longer to dry, have an odor, and do not allow you to paint over mistakes. </p>
+			<img src="images/5.jpg" />
+			<a id="select" data-role="button" href="#step1" data-transition="slideup">Previous</a>
+			<a id="select" data-role="button" href="#step3" data-transition="slideup">Next</a>
+		</div>
+
+	</div>
+
+
+	<!--step3-->
+
+	<div id="step3" class="stepClass" data-role="page" data-dialog="true">
+
+		<div data-role="header">
+			<a href="#Home" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext" data-transition="pop">Home Icon</a>
+			<h1>Step 3 of 7</h1>
+		</div>
+		<div data-role="content">
+			<h4>Create a textured background</h4>
+			<p>One of the easiest ways to do this is to apply artist-quality Gesso, a thick gel-like primer. Apply it like paint, or spread it around with a palette knife, if it's thick enough. This will allow you to control the style of the texture. </p>
+			<img src="images/6.jpg" />
+			<p>You could also leave the canvas smooth and blank. Again, there are no rules for abstract art saying you must have a textured background. Many artists simply start painting on a blank canvas.</p>
+			<a id="select" data-role="button" href="#step2" data-transition="slideup">Previous</a>
+			<a id="select" data-role="button" href="#step4" data-transition="slideup">Next</a>
+		</div>
+
+	</div>
+
+
+	<!--step4-->
+
+	<div id="step4" class="stepClass" data-role="page" data-dialog="true">
+
+		<div data-role="header">
+			<a href="#Home" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext" data-transition="pop">Home Icon</a>
+			<h1>Step 4 of 7</h1>
+		</div>
+
+		<div data-role="content">
+			<h4>Tape lines at intersecting points across the canvas</h4>
+			<p>Use blue painter's tape and place several lines, creating geometric shapes, such as triangles, squares, and rectangles. The goal is to create images that aren't representative of reality. The taped lines will help you paint Painter's tape will ensure that your painting has crisp, clear lines and shapes. </p>
+			<img src="images/7.jpg" />
+			<p>Use rulers and pencil lines instead of tape. If you don't want to deal with the gaps that the painter's tape will cause when you remove it, try marking your canvas using a ruler and pencil. Again, lay your ruler down across several points to create geometric shapes.</p>
+			<a id="select" data-role="button" href="#step3" data-transition="slideup">Previous</a>
+			<a id="select" data-role="button" href="#step5" data-transition="slideup">Next</a>
+		</div>
+
+	</div>
+
+
+	<!--step5-->
+
+	<div id="step5" class="stepClass" data-role="page" data-dialog="true">
+
+		<div data-role="header">
+			<a href="#Home" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext" data-transition="pop">Home Icon</a>
+			<h1>Step 5 of 7</h1>
+		</div>
+
+		<div data-role="content">
+			<h4>Mix your paint colors</h4>
+			<p>Decide which colors you'll be using to complete your painting. Mix them on an artist's palette or plate. You could also mix the colors directly on the canvas, but this will take away some control over the finished look. </p>
+			<img src="images/8.jpg" />
+			<h4>Paint in the spaces between the tape</h4>
+			<p>Don't worry if you happen to get paint on the painter's tape. Also, don't feel as though you must fill your entire canvas, or all of the shapes, with color. </p>
+			<img src="images/9.jpg" />
+			<a id="select" data-role="button" href="#step4" data-transition="slideup">Previous</a>
+			<a id="select" data-role="button" href="#step6" data-transition="slideup">Next</a>
+		</div>
+
+	</div>
+
+
+	<!--step6-->
+
+	<div id="step6" class="stepClass" data-role="page" data-dialog="true">
+
+		<div data-role="header">
+			<a href="#Home" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext" data-transition="pop">Home Icon</a>
+			<h1>Step 6 of 7</h1>
+		</div>
+
+		<div data-role="content">
+			<h4>Remove the tape</h4>
+			<p>As soon as you've decided the painting is complete, remove the painter's tape. If you'd like crisp, clear edges, remove the tape while the paint is still wet. If you remove the tape from a dry painting, it's liable to pull paint away with it, creating slightly rough edges. </p>
+			<img src="images/10.jpg" /><a id="select" data-role="button" href="#step5" data-transition="slideup">Previous</a>
+			<a id="select" data-role="button" href="#step7" data-transition="slideup">Next</a>
+		</div>
+
+	</div>
+
+
+	<!--step7-->
+
+	<div id="step7" class="stepClass" data-role="page" data-dialog="true">
+
+		<div data-role="header">
+			<a href="#Home" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext" data-transition="pop">Home Icon</a>
+			<h1>Step 7 of 7</h1>
+		</div>
+
+		<div data-role="content">
+			<h4>Fill in the blank space from the tape, optional</h4>
+			<p>Once you remove the tape, you'll notice white lines from where the tape was covering the canvas. While you can leave it, you could also paint the lines in. </p>
+			<img src="images/11.jpg" />
+			<a id="select" data-role="button" href="#step6" data-transition="slideup">Previous</a>
+		</div>
+
+	</div>
+
+
+</body>
+
+</html>
